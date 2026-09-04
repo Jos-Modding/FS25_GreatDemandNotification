@@ -13,6 +13,5 @@
     <l10n filenamePrefix="l10n/l10n"/>
     <extraSourceFiles>
         <sourceFile filename="src/GreatDemandNotification.lua"/>
-        <sourceFile filename="src/GreatDemandCommands.lua"/>
     </extraSourceFiles>
 </modDesc>
