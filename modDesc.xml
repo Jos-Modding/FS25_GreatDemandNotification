@@ -8,7 +8,7 @@
     </title>
     <description>
         <en><![CDATA[Replaces the basic Great Demands notification with a more detailed notification.]]></en>
-        <en><![CDATA[Ersetzt die Standardbenachrichtigung „Große Nachfrage durch eine detailliertere Benachrichtigung.]]></en>
+        <de><![CDATA[Ersetzt die Standardbenachrichtigung „Große Nachfrage durch eine detailliertere Benachrichtigung.]]></de>
     </description>
     <iconFilename>icon_GreatDemandNotification.png</iconFilename>
     <multiplayer supported="true"/>
