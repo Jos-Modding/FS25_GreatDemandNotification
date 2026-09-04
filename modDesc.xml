@@ -4,9 +4,11 @@
     <version>1.0.0.0</version>
     <title>
         <en>Great Demand Notification</en>
+        <de>Große Nachfrage Benachrichtigung</de>
     </title>
     <description>
-        <en><![CDATA[Description]]></en>
+        <en><![CDATA[Replaces the basic Great Demands notification with a more detailed notification.]]></en>
+        <en><![CDATA[Ersetzt die Standardbenachrichtigung „Große Nachfrage durch eine detailliertere Benachrichtigung.]]></en>
     </description>
     <iconFilename>icon_GreatDemandNotification.png</iconFilename>
     <multiplayer supported="true"/>

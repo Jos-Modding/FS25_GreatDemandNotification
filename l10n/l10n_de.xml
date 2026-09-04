@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <l10n xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/l18n.xsd">
     <elements>
-        <e k="gdn_notificationTitle" v="Great demand: %s"/>
-        <e k="gdn_notificationInfo"  v="%s / 1000 %s fur %d Uhr"/>
+        <e k="gdn_notificationTitle" v="Große Nachfrage: %s"/>
+        <e k="gdn_notificationInfo"  v="%s / 1000 %s für %d Std."/>
     </elements>
 </l10n>
