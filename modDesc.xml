@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="111">
+    <author>Jos</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Great Demand Notification</en>
+    </title>
+    <description>
+        <en><![CDATA[Description]]></en>
+    </description>
+    <iconFilename>icon_GreatDemandNotification.png</iconFilename>
+    <multiplayer supported="true"/>
+    <l10n filenamePrefix="l10n/l10n"/>
+    <extraSourceFiles>
+        <sourceFile filename="src/GreatDemandNotification.lua"/>
+        <sourceFile filename="src/GreatDemandCommands.lua"/>
+    </extraSourceFiles>
+</modDesc>
