@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="111" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+<modDesc descVersion="113" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>Jos</author>
     <version>1.0.0.0</version>
     <title>
@@ -8,7 +8,7 @@
     </title>
     <description>
         <en><![CDATA[Replaces the basic Great Demands notification with a more detailed notification.]]></en>
-        <de><![CDATA[Ersetzt die Standardbenachrichtigung „Große Nachfrage durch eine detailliertere Benachrichtigung.]]></de>
+        <de><![CDATA[Ersetzt die Standardbenachrichtigung „Große Nachfrage" durch eine detailliertere Benachrichtigung.]]></de>
     </description>
     <iconFilename>icon_GreatDemandNotification.png</iconFilename>
     <multiplayer supported="true"/>
@@ -16,4 +16,5 @@
     <extraSourceFiles>
         <sourceFile filename="src/GreatDemandNotification.lua"/>
     </extraSourceFiles>
+    <placeableTypes/>
 </modDesc>
