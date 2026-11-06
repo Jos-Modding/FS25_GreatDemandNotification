@@ -15,7 +15,7 @@ Changelog 1.0.0.1:
         <de><![CDATA[Ersetzt die Standardbenachrichtigung „Große Nachfrage" durch eine detailliertere Benachrichtigung.
 
 Changelog 1.0.0.1:
-- Fehler behoben, durch den „Große Nachfrage“ nicht ausgelöst wurde.
+- Fehler behoben, durch die „Große Nachfrage“ nicht ausgelöst wurde.
 ]]></de>
     </description>
     <iconFilename>icon_GreatDemandNotification.png</iconFilename>
