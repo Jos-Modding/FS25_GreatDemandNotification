@@ -64,15 +64,30 @@ function GreatDemandNotification.squareIcon(hud, iconFilename)
 end
 
 ---
-function GreatDemandNotification.startGreatDemand(self, superFunc, greatDemand)
+function GreatDemandNotification.startGreatDemand(self, _, greatDemand)
+    greatDemand.isRunning = true
+
+    local sellStation = greatDemand.sellStation
+
+    if sellStation == nil then
+        return
+    end
+
+    if sellStation:getSupportsGreatDemand(greatDemand.fillTypeIndex) then
+        sellStation:setIsInGreatDemand(greatDemand.fillTypeIndex, true)
+        self.greatDemandFillTypes[greatDemand.fillTypeIndex] = true
+
+        if sellStation.mapHotspot ~= nil then
+            sellStation.mapHotspot:setBlinking(true)
+            sellStation.mapHotspot:setPersistent(true)
+        end
+
+        sellStation:setPriceMultiplier(greatDemand.fillTypeIndex, greatDemand.demandMultiplier)
+    end
 
     local title, text, info, iconFilename = GreatDemandNotification.getNotification(greatDemand)
 
     if title == nil then
-        if greatDemand.sellStation == nil then
-            return
-        end
-
         title = ""
         text = ""
         info = ""
@@ -80,9 +95,9 @@ function GreatDemandNotification.startGreatDemand(self, superFunc, greatDemand)
 
     g_currentMission.hud:addTopNotification(title, text, info, iconFilename, GreatDemandNotification.NOTIFICATION_DURATION)
 
-	if iconFilename ~= nil then
-		GreatDemandNotification.squareIcon(g_currentMission.hud, iconFilename)
-	end
+    if iconFilename ~= nil then
+        GreatDemandNotification.squareIcon(g_currentMission.hud, iconFilename)
+    end
 
     g_gui.guiSoundPlayer:playSample(GuiSoundPlayer.SOUND_SAMPLES.NOTIFICATION)
 end
